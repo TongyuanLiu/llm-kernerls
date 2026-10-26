@@ -1,0 +1,12 @@
+# Executables: ignore every file without an extension,
+# but keep directories and extension-less files we do want.
+*
+!*/
+!*.*
+!README
+!Makefile
+
+# Profiler outputs (must come after !*.* above, later rules win)
+*.nsys-rep
+*.sqlite
+*.ncu-rep
